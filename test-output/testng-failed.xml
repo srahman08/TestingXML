@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]">
+  <test thread-count="5" name="addCustomerTest(failed)">
+    <parameter name="Zip" value="75009"/>
+    <parameter name="CompanyName" value="Techfios"/>
+    <parameter name="password" value="abc123"/>
+    <parameter name="Email" value="abc@techfios.com"/>
+    <parameter name="Address" value="Techfios Building"/>
+    <parameter name="Phone" value="1234567890"/>
+    <parameter name="State" value="TX"/>
+    <parameter name="FullName" value="Shamim Rahman"/>
+    <parameter name="Country" value="Bangladesh"/>
+    <parameter name="inValidPassword" value="abcd1234"/>
+    <parameter name="City" value="Carrolton"/>
+    <parameter name="username" value="demo@techfios.com"/>
+    <classes>
+      <class name="test.addCustomerTest">
+        <methods>
+          <include name="validUserShouldBeAbleToAddCustomer" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.addCustomerTest -->
+    </classes>
+  </test> <!-- addCustomerTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->
